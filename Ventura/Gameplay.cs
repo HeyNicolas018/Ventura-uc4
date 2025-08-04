@@ -14,6 +14,6 @@ namespace Ventura
 
         public static Gameplay Instance => instancia ??= new Gameplay();
 
-
+        
     }
 }
