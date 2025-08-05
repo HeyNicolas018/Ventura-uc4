@@ -21,7 +21,7 @@ namespace Ventura
 
             if (escolha == "1")
             {
-                Gameplay.Instance.Layout();
+                Gameplay.Instance.LayoutInicial();
             }
         }
 
