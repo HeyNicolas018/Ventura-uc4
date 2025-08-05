@@ -5,7 +5,7 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace Ventura
 {
-    class VenturaProgram
+    public class VenturaProgram
     {
 
         public static void Main()

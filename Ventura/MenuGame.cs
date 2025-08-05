@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ventura
 {
-    class MenuGame
+    public class MenuGame
     {
 
         static private MenuGame instance;

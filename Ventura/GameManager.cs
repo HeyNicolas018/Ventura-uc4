@@ -9,14 +9,20 @@ namespace Ventura
 {
     public class GameManager
     {
-
-        static private GameManager instance;
+        private static GameManager instance;
+        private GameManager() { }
         public static GameManager Instance = instance ??= new GameManager();
 
 
         public void IniciaMenu()
         {
             MenuGame.Instance.ChamaMenu();
+            if 
+        }
+
+        public static void IniciaJogo()
+        {
+            Gameplay.Instance.Layout();
         }
     }
 }
