@@ -7,7 +7,6 @@ namespace Ventura
 {
     public class VenturaProgram
     {
-
         public static void Main()
         {
            GameManager.Instance.IniciaMenu();   

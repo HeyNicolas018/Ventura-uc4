@@ -17,12 +17,13 @@ namespace Ventura
         public void IniciaMenu()
         {
             MenuGame.Instance.ChamaMenu();
-            if 
+            string escolha = Console.ReadLine();
+
+            if (escolha == "1")
+            {
+                Gameplay.Instance.Layout();
+            }
         }
 
-        public static void IniciaJogo()
-        {
-            Gameplay.Instance.Layout();
-        }
     }
 }
