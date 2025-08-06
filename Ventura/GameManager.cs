@@ -21,9 +21,10 @@ namespace Ventura
 
             if (escolha == "1")
             {
-                Layouts.Instance.LayoutInicial();
+                Layouts.Instance.Start();
             }
         }
+
 
     }
 }
