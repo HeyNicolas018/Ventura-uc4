@@ -15,9 +15,17 @@ namespace Ventura
 
         public static Layouts Instance => instancia ??= new Layouts();
 
+        
         private bool rodando;
         int tenta = 0;
         int dados = 0;
+
+        public void ManterCor(string mensagem, ConsoleColor cor)
+        {
+            Console.ForegroundColor = cor;
+            Console.WriteLine(mensagem);
+            Console.ResetColor();
+        }
         public void Start()
         {
             rodando = true;
@@ -25,12 +33,13 @@ namespace Ventura
             dados = 0;
             pre1();
         }
-
+        
         public void pre1()
         {
             
             while (rodando)
             {
+
                 Console.Clear();
 
                 Console.WriteLine($"""
@@ -46,6 +55,7 @@ namespace Ventura
                 2 - NÃO, EU NÃO QUERO
 
                 """);
+
                 string escolha = Console.ReadLine();
                 Console.Clear();
 
@@ -65,7 +75,7 @@ namespace Ventura
             }
         }
 
-
+        
         public void aviso1()
         {
             Console.WriteLine($"""
@@ -236,6 +246,8 @@ namespace Ventura
             2 - NÃO, EU NÃO QUERO
 
             """);
+
+            
             string escolha = Console.ReadLine();
             Console.Clear();
 
