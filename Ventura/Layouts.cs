@@ -191,7 +191,7 @@ namespace Ventura
             }
             if (escolha == "2")
             {
-                if (tenta > 1)
+                if (tenta > 0)
                 {
                     Console.WriteLine("""
                     #########################################
@@ -233,7 +233,7 @@ namespace Ventura
             #########################################
 
             1 - CERTO, AQUI ESTÁ 
-            3 - NÃO, EU NÃO QUERO
+            2 - NÃO, EU NÃO QUERO
 
             """);
             string escolha = Console.ReadLine();

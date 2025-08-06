@@ -17,9 +17,9 @@ namespace Ventura
         public void IniciaMenu()
         {
             MenuGame.Instance.ChamaMenu();
-            string escolha = Console.ReadLine();
+            var escolha = Console.ReadKey().Key;
 
-            if (escolha == "1")
+            if (escolha == ConsoleKey.Enter)
             {
                 Layouts.Instance.Start();
             }
