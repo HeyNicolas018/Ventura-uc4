@@ -561,10 +561,11 @@ namespace Ventura
 
                     #########################################
                     """);
+                    string final = Console.ReadLine();
                     rodando = false;
                     return;
                 }
-                if (dados >= 5)
+                if (dados >= 5 || dados <= 5)
                 {
                     Console.WriteLine($"""
                     #########################################
@@ -578,6 +579,7 @@ namespace Ventura
 
                     #########################################
                     """);
+                    string final = Console.ReadLine();
                     rodando = false;
                     return;
                 }
@@ -595,6 +597,7 @@ namespace Ventura
 
                     #########################################
                     """);
+                    string final = Console.ReadLine();
                     rodando = false;
                     return;
                 }
