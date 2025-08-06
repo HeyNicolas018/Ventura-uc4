@@ -341,7 +341,7 @@ namespace Ventura
             if (escolha == "1")
             {
                 dados++;
-                init2();
+                init3();
             }
             else if (escolha == "2")
             {
@@ -357,9 +357,10 @@ namespace Ventura
              
                     Olá, Bem-Vindo ao Lyonei
 
-               Podemos vincular seus amigos de outros 
-                apps, para poder conversar com eles.
-                  Deseja vincular suas contatos?
+               Podemos usar a localização do dispositivo 
+                em caso de ser usado por crianças com 
+                        controle parental. 
+                    Deseja usar geolocalização?
                 
                              
 
@@ -375,12 +376,231 @@ namespace Ventura
             if (escolha == "1")
             {
                 dados++;
-                init2();
+                init4();
+            }
+            if (escolha == "2")
+            {
+                init4();
+            }
+        }
+
+        public void init4()
+        {
+            Console.WriteLine($"""
+            #########################################
+                                
+             
+                    Olá, Bem-Vindo ao Lyonei
+
+                Podemos saber em qual lugar você está 
+             para poder melhorar os conteúdos preferidos
+                por você ou pessoas que você segue
+                  podemos saber sua localização?
+                
+                             
+
+            #########################################
+
+            1 - CERTO, AQUI ESTÁ  
+            2 - NÃO, EU NÃO QUERO
+
+            """);
+            string escolha = Console.ReadLine();
+            Console.Clear();
+
+            if (escolha == "1")
+            {
+                dados++;
+                init5();
             }
             else if (escolha == "2")
             {
-                init3();
+                init5();
             }
+        }
+
+        public void init5()
+        {
+            Console.WriteLine($"""
+            #########################################
+                                
+             
+                    Olá, Bem-Vindo ao Lyonei
+
+                Nós usamos cookies de terceiros  
+             para poder melhorar os conteúdos e oferecer 
+                produtos de forma personalizada
+                com base no seu gosto e curtida
+               aceita nossa política de cookies?
+                
+                             
+
+            #########################################
+
+            1 - CERTO, AQUI ESTÁ  
+            2 - NÃO, EU NÃO QUERO
+
+            """);
+            string escolha = Console.ReadLine();
+            Console.Clear();
+
+            if (escolha == "1")
+            {
+                dados++;
+                init6();
+            }
+            else if (escolha == "2")
+            {
+                init6();
+            }
+        }
+
+        public void init6()
+        {
+            Console.WriteLine($"""
+            #########################################
+                                
+             
+                    Olá, Bem-Vindo ao Lyonei
+
+                Podemos usar o microfone do seu dispositivo 
+             para melhor ajudar você a buscar os seus assuntos
+                e seu intereses favoritos e seus ídolos
+                  por você ou pessoas que você segue
+                   podemos usar seu microfone?
+                
+                             
+
+            #########################################
+
+            1 - CERTO, AQUI ESTÁ  
+            2 - NÃO, EU NÃO QUERO
+
+            """);
+            string escolha = Console.ReadLine();
+            Console.Clear();
+
+            if (escolha == "1")
+            {
+                dados++;
+                init7();
+            }
+            else if (escolha == "2")
+            {
+                init7();
+            }
+        }
+
+        public void init7()
+        {
+            Console.WriteLine($"""
+            #########################################
+                                
+             
+                    Olá, Bem-Vindo ao Lyonei
+
+                Podemos acessar suas fotos e mídia 
+               e poder criar um perfil personalizado
+              e posts feitos com IA, para uma primeira
+             experiência com o aplicativo e intereações
+                podemos acessar suas fotos e mídia?
+                
+                             
+
+            #########################################
+
+            1 - CERTO, AQUI ESTÁ  
+            2 - NÃO, EU NÃO QUERO
+
+            """);
+            string escolha = Console.ReadLine();
+            Console.Clear();
+
+            if (escolha == "1")
+            {
+                dados++;
+                initFinal();
+            }
+            else if (escolha == "2")
+            {
+                initFinal();
+            }
+        }
+
+        public void initFinal()
+        {
+            Console.WriteLine($"""
+            #########################################
+                                
+             
+                    TUDO CERTO, VAMOS COMEÇAR?
+                
+                             
+
+            #########################################
+
+            1 - SIM
+
+            """);
+            string escolha = Console.ReadLine();
+            Console.Clear();
+
+            if (escolha == "1")
+            {
+                if (dados == 10)
+                {
+                    Console.WriteLine($"""
+                    #########################################
+                                
+             
+                            VOCÊ DEU TODOS OS SEUS DADOS
+                            
+                     Você nos deu tudo. Agora, você é o produto
+                
+                             
+
+                    #########################################
+                    """);
+                    rodando = false;
+                    return;
+                }
+                if (dados >= 5)
+                {
+                    Console.WriteLine($"""
+                    #########################################
+                                
+             
+                         VOCÊ DEU PARCIALMENTE OS SEUS DADOS
+                            
+                     Você hesitou, mas ainda assim entregou muito
+                
+                             
+
+                    #########################################
+                    """);
+                    rodando = false;
+                    return;
+                }
+                if (dados <= 3)
+                {
+                    Console.WriteLine($"""
+                    #########################################
+                                
+             
+                              VOCÊ DEU POUCOS DADOS
+                            
+                     Você fez o que muitos não fazem: disse não
+                
+                             
+
+                    #########################################
+                    """);
+                    rodando = false;
+                    return;
+                }
+            }
+            
         }
     }
 }
+
